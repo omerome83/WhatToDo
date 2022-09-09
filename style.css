@@ -139,9 +139,9 @@ ul li {
   margin-top: 1.5em;
 }
 
-ul li:nth-child(even) {
+/* ul li:nth-child(even) {
   color: rgba(58, 49, 42, 0.75);
-}
+} */
 
 ul li:hover {
   cursor: pointer;
@@ -153,7 +153,6 @@ ul li:hover {
   /* display: grid;
   padding: 2em;
   max-width: 50em;
-  background-color: blueviolet;
   place-items: center; */
 }
 
@@ -172,6 +171,11 @@ ul li:hover {
 
 .todo-card h1 {
   font-size: 2.5rem;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+.todo-card h2 {
+  color: #db6672;
 }
 
 .todo-card img {
@@ -198,7 +202,6 @@ ul li:hover {
 
 .todo-card__add-todo {
   display: flex;
-  /* place-items: space-around; */
 }
 
 .add-todo:hover,
@@ -211,5 +214,5 @@ ul li:hover {
   display: flex;
   flex-direction: column;
   place-self: start;
-  padding: 1em;
+  /* padding: 1em; */
 }
