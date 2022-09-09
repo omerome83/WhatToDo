@@ -107,26 +107,54 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+input {
+  max-width: 100%;
+  /* display: flex; */
+  /* justify-self: space-between; */
+  /* justify-content: space-between; */
+}
+
 button {
   border: 0;
   background: none;
-  color: inherit;
 }
 
 /* Custon classes */
 
-.todo-card {
+.container {
   /* display: grid;
-  grid-template-columns: repeat(1, 1fr); */
+  padding: 2em;
+  max-width: 50em;
+  background-color: blueviolet;
+  place-items: center; */
+}
+
+.todo-card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  width: 25em;
+  padding: 1em;
+  background-color: antiquewhite;
+}
+
+.todo-card img {
+  margin: 2em 0;
 }
 
 .fa-plus {
+  display: inline-block;
   padding: 0.4em;
   color: white;
   background-color: #00acea;
 }
 
-.todo-card__add-todo:hover {
+.todo-card__add-todo {
+  display: flex;
+  /* place-items: space-around; */
+}
+
+.add-todo:hover {
   cursor: pointer;
   opacity: 0.9;
 }
