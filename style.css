@@ -108,11 +108,19 @@ body {
 }
 
 input {
-  max-width: 100%;
+  width: 100%;
   margin-right: 0.5em;
+  border: 1px solid #ccc;
+  padding: 0 0.5em;
+  border-radius: 5px;
   /* display: flex; */
   /* justify-self: space-between; */
   /* justify-content: space-between; */
+}
+
+input:focus {
+  outline: 2px solid #d6df58;
+  border: 0;
 }
 
 button {
@@ -142,13 +150,20 @@ ul li {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
-  width: 25em;
+  width: 40em;
   padding: 2em;
-  background-color: antiquewhite;
+  background-color: #fae6ca;
+  color: #3a312a;
+}
+
+.todo-card h1 {
+  font-size: 2.5rem;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
 .todo-card img {
   margin: 2em 0;
+  max-width: 25%;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
@@ -157,14 +172,15 @@ ul li {
   display: inline-block;
   padding: 0.4em;
   color: white;
+  border-radius: 5px;
 }
 
 .fa-plus {
-  background-color: #00acea;
+  background-color: #8ac5dc;
 }
 
 .fa-eraser {
-  background-color: #ff7ebf;
+  background-color: #db6672;
 }
 
 .todo-card__add-todo {
