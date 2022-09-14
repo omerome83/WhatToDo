@@ -62,21 +62,19 @@ const addNewTodo = (text) => {
 
   let html = "";
 
-  //   html = `
-  //     <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>${text}</li>
-  // `;
-
   html = `
-  <li>${text}</li>
-`;
+      <li><span class="fa-li"><i class="fa-solid fa-circle"></i></span>${text}</li>
+  `;
 
   ul.innerHTML += html;
 
   ul.addEventListener("click", (e) => {
     if (e.target.tagName === "LI") {
-      console.log(e.target);
-      e.target.style.textDecoration = "line-through";
-      //   e.target.classList.add("fa-regular", "fa-checked");
+      if (e.target.style.textDecoration === "") {
+        e.target.style.textDecoration = "line-through";
+      } else {
+        e.target.style.textDecoration = "";
+      }
     }
   });
 };
