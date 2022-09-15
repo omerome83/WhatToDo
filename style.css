@@ -114,9 +114,6 @@ input {
   border: 1px solid #ccc;
   padding: 0 0.5em;
   border-radius: 5px;
-  /* display: flex; */
-  /* justify-self: space-between; */
-  /* justify-content: space-between; */
 }
 
 input:focus {
@@ -148,13 +145,6 @@ ul li:hover {
 }
 
 /* Custon classes */
-
-.container {
-  /* display: grid;
-  padding: 2em;
-  max-width: 50em;
-  place-items: center; */
-}
 
 .todo-card {
   display: grid;
