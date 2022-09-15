@@ -70,6 +70,7 @@ const addNewTodo = (text) => {
 
   ul.addEventListener("click", (e) => {
     if (e.target.tagName === "LI") {
+      console.log(e.target);
       if (e.target.style.textDecoration === "") {
         e.target.style.textDecoration = "line-through";
       } else {
