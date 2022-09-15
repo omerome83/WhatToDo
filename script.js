@@ -24,20 +24,6 @@ addTodo.addEventListener("click", (e) => {
     if (todoText.value !== "") {
       addNewTodo(todoText.value);
       value = todoText.value = "";
-
-      //   faLiClassName.addEventListener("click", (e) => {
-      //     console.log(e.target);
-      //     console.log("HI");
-      //     // faLiClassName.style.textDecoration = "line-through";
-      //     // if(faLiClassName.classList.contains("fa-regular fa-square") {
-      //     //     faLiClassName.classList.remove("fa-regular fa-square");
-      //     //     faLiClassName.classList.add("fa-solid fa-check-square");
-      //     // })
-      //     // faLiClassName.classList.remove("fa-solid fa-check-square");
-
-      //     // faLiClassName.classList.remove("fa-regular fa-square");
-      //     // faLiClassName.classList.add("fa-solid fa-check-square");
-      //   });
     }
   } catch (err) {
     console.log(err);
@@ -49,17 +35,6 @@ removeTodo.addEventListener("click", (e) => {
 });
 
 const addNewTodo = (text) => {
-  //   const li = document.createElement("li");
-  //   const span = document.createElement("span");
-
-  //   span.setAttribute("class", faLiClassName);
-  //   li.classList.add("fa-li");
-  //   span.classList.add("fa-li");
-  //   let text = document.createTextNode(text);
-  //   li.appendChild(span);
-  //   li.appendChild(text);
-  //   ul.appendChild(li);
-
   let html = "";
 
   html = `
@@ -70,11 +45,10 @@ const addNewTodo = (text) => {
 
   ul.addEventListener("click", (e) => {
     if (e.target.tagName === "LI") {
-      console.log(e.target);
-      if (e.target.style.textDecoration === "") {
+      if (e.target.style.textDecoration === "none") {
         e.target.style.textDecoration = "line-through";
       } else {
-        e.target.style.textDecoration = "";
+        e.target.style.textDecoration = "none";
       }
     }
   });
