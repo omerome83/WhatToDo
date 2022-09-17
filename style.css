@@ -152,6 +152,7 @@ ul li:hover {
   place-items: center;
   max-width: 25em;
   padding: 2em;
+  margin: 1em;
   background-color: #fae6ca;
   color: #3a312a;
   border: 1px solid #3a312a;
