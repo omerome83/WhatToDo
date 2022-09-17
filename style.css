@@ -81,6 +81,7 @@ select {
 :root {
   /* Colors */
   --color-baby-blue: rgb(138, 197, 220);
+  --color-light-gray: rgb(204, 204, 204);
   --color-neon-yellow: #d6df58;
   --color-tan: rgb(250, 230, 202);
   --color-dark-brown: rgb(58, 49, 42);
@@ -117,14 +118,14 @@ body {
 input {
   width: 100%;
   margin-right: 0.5em;
-  border: 1px solid #ccc;
+  outline: 2px solid var(--color-light-gray);
+  border: 0;
   padding: 0 0.5em;
   border-radius: 5px;
 }
 
 input:focus {
   outline: 2px solid var(--color-neon-yellow);
-  border: 0;
 }
 
 button {
@@ -132,13 +133,9 @@ button {
   background: none;
 }
 
-/* ul {
-  padding-left: 0;
-} */
-
 ul li {
   font-weight: var(--font-weight-700);
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 ul li:nth-child(even) {
@@ -149,7 +146,7 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* Custon classes */
+/* Custom classes */
 
 .todo-card {
   display: grid;
@@ -194,6 +191,11 @@ ul li:hover {
 
 .fa-eraser {
   background-color: var(--color-salmon);
+}
+
+.fa-solid,
+.fa-pencil {
+  font-size: 0.75rem;
 }
 
 .todo-card__add-todo {
