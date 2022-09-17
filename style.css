@@ -80,6 +80,12 @@ select {
 
 :root {
   /* Colors */
+  --color-baby-blue: rgb(138, 197, 220);
+  --color-neon-yellow: #d6df58;
+  --color-tan: rgb(250, 230, 202);
+  --color-dark-brown: rgb(58, 49, 42);
+  --color-lighter-brown: rgb(88, 74, 62);
+  --color-salmon: rgb(219, 102, 114);
 
   /* Font Sizes */
   --font-size-1600: 4rem;
@@ -105,7 +111,7 @@ body {
   place-content: center;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
-  background-color: #8ac5dc;
+  background-color: var(--color-baby-blue);
 }
 
 input {
@@ -117,7 +123,7 @@ input {
 }
 
 input:focus {
-  outline: 2px solid #d6df58;
+  outline: 2px solid var(--color-neon-yellow);
   border: 0;
 }
 
@@ -126,19 +132,18 @@ button {
   background: none;
 }
 
-ul {
-  list-style: none;
+/* ul {
   padding-left: 0;
-}
+} */
 
 ul li {
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   margin-top: 1.5em;
 }
 
-/* ul li:nth-child(even) {
-  color: rgba(58, 49, 42, 0.75);
-} */
+ul li:nth-child(even) {
+  color: var(--color-lighter-brown);
+}
 
 ul li:hover {
   cursor: pointer;
@@ -153,9 +158,9 @@ ul li:hover {
   max-width: 25em;
   padding: 2em;
   margin: 1em;
-  background-color: #fae6ca;
-  color: #3a312a;
-  border: 1px solid #3a312a;
+  background-color: var(--color-tan);
+  color: var(--color-dark-brown);
+  border: 1px solid var(--color-dark-brown);
   border-radius: 0.5em;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
@@ -166,7 +171,7 @@ ul li:hover {
 }
 
 .todo-card h2 {
-  color: #db6672;
+  color: var(--color-salmon);
 }
 
 .todo-card img {
@@ -179,16 +184,16 @@ ul li:hover {
 .fa-eraser {
   display: inline-block;
   padding: 0.4em;
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 5px;
 }
 
 .fa-plus {
-  background-color: #8ac5dc;
+  background-color: var(--color-baby-blue);
 }
 
 .fa-eraser {
-  background-color: #db6672;
+  background-color: var(--color-salmon);
 }
 
 .todo-card__add-todo {
